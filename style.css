@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,800;0,900;1,200;1,400;1,600&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    -webkit-tap-highlight-color: transparent; /* transparent with keyword */
+-webkit-tap-highlight-color: rgba(0,0,0,0); /* transparent with rgba */
+-webkit-tap-highlight-color: hsla(0,0,0,0); /* transparent with hsla */
+-webkit-tap-highlight-color: #00000000; /* transparent with hex with alpha */
+-webkit-tap-highlight-color: #0000; /* transparent with short hex with alpha */
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: #6190E8;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #A7BFE8, #6190E8);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #A7BFE8, #6190E8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.container, #quiz{
+    width: 65%;
+    max-width: 400px;
+    margin: 0 1rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: -2px 2px 51px -6px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -2px 2px 51px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 2px 51px -6px rgba(0,0,0,0.75);
+
+}
+
+.header{
+    padding: 1.2rem;
+}
+
+.header h2{
+    margin: 0.7rem 0;
+    font-size: 1.2rem;
+}
+
+label {
+    cursor: pointer;
+}
+
+li {
+    margin: 0.5rem 0;
+}
+
+button {
+    width: 100%;
+    background-color: rgb(33, 125, 179);
+    border: none;
+    padding: 0.7rem;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(12, 79, 117);
+}
+
+button:focus{
+    background-color: rgb(33, 125, 179);
+    outline: none;
+}
